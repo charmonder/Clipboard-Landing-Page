@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+}
+
+/*********************** TEXT STYLES ***********************/
+h1, h2, h3{
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.8rem;
+  max-width: 300px;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+p{
+  color: hsl(201, 11%, 66%);
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 auto 50px;
+  max-width: 310px;
+}
+
+.section-intro p{
+  margin-bottom: 60px;
+}
+
+.attribution p{
+  margin-bottom: 0;
+}
+
+
+
+
+/*********************** HEADER ***********************/
+body{
+  min-height: 100%;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 130px 30px 170px;
+}
+
+header::before{
+  content: "";
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.header-logo img{
+  margin-bottom: 60px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  padding: 15px 80px;
+}
+
+.iOS{
+  background-color: hsl(171, 66%, 44%);
+  border: 1px solid hsl(171, 66%, 40%);
+  box-shadow: 1px 2px hsl(171, 66%, 40%);
+  margin-bottom: 25px;
+}
+
+.mac{
+  background-color: hsl(233, 100%, 69%);
+  border: 1px solid hsl(233, 100%, 65%);
+  box-shadow: 1px 2px hsl(233, 100%, 65%);
+}
+
+
+
+/*********************** MAIN ***********************/
+
+.snippets, .clipboard, .workflow, .download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.snippets img{
+  width: 80%;
+}
+
+.snippets-details{
+  padding: 60px 30px 130px;
+}
+
+.clipboard{
+  margin-bottom: 100px;
+}
+
+ .clipboard img{
+   width: 90%;
+ }
+
+ .workflow{
+   margin-bottom: 60px;
+ }
+
+ .workflow-details img{
+   margin-bottom: 40px;
+ }
+
+ .company-logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 100px;
+ }
+
+ .company-logo img{
+   margin-bottom: 60px;
+ }
+
+ .download{
+   margin-bottom: 180px;
+ }
+
+/*********************** FOOTER ***********************/
+
+footer{
+  background-color: hsl(201, 11%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.web-footer{
+  padding: 50px 0 40px;
+}
+
+.footer-logo img{
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.links a{
+  color: hsl(210, 10%, 53%);
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.link-1, .link-2, .link-3{
+  display: flex;
+  flex-direction: column;
+}
+
+.icons img{
+  margin: 20px 20px 0;
+}
+
+.icons a{
+  text-decoration: none;
+}
+
+
+
+/*********************** DESKTOP VERSION ***********************/
+
+@media (min-width: 600px){
+
+  /*********************** desktop text styles ***********************/
+
+  h2, h3, p{
+    max-width: 500px;
+  }
+
+  h2{
+    margin: 0 auto 20px;
+  }
+
+  .section-intro p{
+    max-width: 620px;
+  }
+
+  .snippets-details p{
+    max-width: 350px;
+  }
+
+  .snippets-details h3{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .workflow-details p{
+    margin: 0;
+    max-width: 350px;
+  }
+
+
+
+
+  /*********************** others ***********************/
+
+  header::before{
+    background-image: url(images/bg-header-desktop.png);
+    height: 350px;
+  }
+
+  .header-logo img{
+    margin-bottom: 50px;
+    width:90%;
+  }
+
+  .buttons{
+    flex-direction: row;
+  }
+
+  button{
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .iOS{
+    margin: 0 15px;
+  }
+
+  .iOS:hover{
+    background-color: hsl(171, 66%, 48%);
+    cursor: pointer;
+  }
+
+  .mac:hover{
+    background-color: hsl(233, 100%, 73%);
+    cursor: pointer;
+  }
+
+  .snippets-body{
+    display: flex;
+    padding-bottom: 100px;
+  }
+
+  .snippets-img{
+    position: relative;
+    width: 500px;
+  }
+
+  .snippets-img img{
+    position: absolute;
+    right: 85px;
+    width: 130%;
+  }
+
+  .snippets-details{
+    padding: 40px 0 0;
+    text-align: left;
+  }
+
+  .clipboard{
+    margin-bottom: 50px;
+  }
+
+  .workflow-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .text-snippets, .sneak-preview{
+    margin-left: 30px;
+  }
+
+  .blacklists img{
+    width: 10%;
+  }
+
+  .company-logo{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .company-logo img{
+    margin: 0 50px;
+  }
+
+  .download{
+    margin-bottom: 100px;
+  }
+
+  .web-footer, .links{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .web-footer{
+    align-items: center;
+    width: 100%;
+    padding: 50px 100px;
+  }
+
+  .footer-logo img{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    width: 50px;
+  }
+
+  .links{
+    width: 70%;
+  }
+
+  .link-1, .link-2, .link-3{
+    margin-right: 80px;
+  }
+
+  .icons img{
+    margin: 0 20px 0 0;
+  }
+
+  .links a:hover{
+    color: hsl(171, 66%, 48%);
+  }
+
+  .icons img:hover{
+    filter: invert(51%) sepia(82%) saturate(387%) hue-rotate(122deg) brightness(103%) contrast(88%);
+  }
+
+}
